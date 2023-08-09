@@ -49,15 +49,7 @@ body {
   .logo img {
     height: 100px;
   }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: min-content;
-    z-index: 9999;
-  }
   
-
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .columns {
@@ -111,7 +103,7 @@ footer p {
 .footer {
   color: #fff;
 }
- ad
+
 /* Additional styles for the roadmap section */
 .roadmap {
   background-color: #f9f9f9; /* Light Gray */
