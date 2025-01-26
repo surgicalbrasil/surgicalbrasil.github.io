@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="SurgicalBrasil provides a secure, decentralized platform for publishing and protecting scientific research.">
+  <meta name="keywords" content="Web3, decentralized publishing, secure research platform, blockchain, scientific publishing, surgical innovations">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SurgicalBrasil | Secure Decentralized Research Publishing">
+  <meta property="og:description" content="Join SurgicalBrasil and revolutionize how researchers publish and protect their work in a decentralized Web3 environment.">
+  <meta property="og:image" content="images/surgicalbrasil-og.png">
+  <meta property="og:url" content="https://surgicalbrasil.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SurgicalBrasil | Decentralized Publishing Platform">
+  <meta name="twitter:description" content="A secure, Web3-based solution for protecting scientific research.">
+  <meta name="twitter:image" content="images/surgicalbrasil-og.png">
+
+  <title>SurgicalBrasil | Secure Web3 Publishing</title>
+
+  <!-- Three Js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Font Awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+<body class="bg-gray-100 text-gray-800 font-montserrat">
+
+<!-- Hero Section -->
+<section id="hero" class="relative h-screen flex items-center justify-center text-center bg-[#1D3557] text-white px-4 sm:px-8">
+  <div id="three-container" class="absolute inset-0 z-0"></div>
+  <div class="relative z-10 max-w-4xl">
+    <h1 class="text-4xl font-bold mb-6 sm:text-5xl md:text-7xl">
+      SurgicalBrasil
+    </h1>
+    <p class="text-lg mb-6 sm:text-xl md:text-2xl">
+      Empowering researchers with secure, decentralized publishing.
+    </p>
+  </div>
+</section>
+
+  
+<!-- Problem Section -->
+<section id="problem-section" class="w-full min-h-screen flex flex-col items-center justify-center bg-gray-100 py-8 px-4 sm:py-12 sm:px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 gap-8 h-full md:grid-cols-2">
+    <!-- Problem Heading -->
+    <h2 class="text-3xl font-bold text-center mb-8 text-[#1D3557] animate__animated animate__fadeInUp sm:text-4xl md:text-5xl md:mb-12 md:col-span-2">
+      What Challenges Do Researchers Face in Securing Their Work and Gaining Recognition?
+    </h2>
+    
+    <!-- Left Column: Boxes -->
+    <div class="flex flex-col space-y-4">
+      <div id="problem-box1" class="opacity-0 transform translate-y-10 p-4 sm:p-6 bg-white rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-[#2A9D8F] mb-3 sm:text-2xl">Lack of Recognition</h3>
+        <p class="text-sm sm:text-base text-gray-700">
+          Many early-career researchers struggle to gain recognition for their work due to limited publication options and competition from established researchers.
+        </p>
+      </div>
+      <div id="problem-box2" class="opacity-0 transform translate-y-10 p-4 sm:p-6 bg-white rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-[#E76F51] mb-3 sm:text-2xl">Security Risks</h3>
+        <p class="text-sm sm:text-base text-gray-700">
+          Centralized platforms offer little protection for sensitive data, leading to trust issues and potential IP theft.
+        </p>
+      </div>
+      <div id="problem-box3" class="opacity-0 transform translate-y-10 p-4 sm:p-6 bg-white rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-[#457B9D] mb-3 sm:text-2xl">Transparency Issues</h3>
+        <p class="text-sm sm:text-base text-gray-700">
+          Existing publishing methods lack transparency, making it difficult to trace authorship and verify data integrity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Column: Video -->
+    <div id="problem-video" class="opacity-0 transform translate-y-10 w-full h-64 sm:h-96 md:h-auto md:row-span-3 md:col-span-1">
+      <video class="w-full h-full rounded-lg shadow-lg object-cover" autoplay loop muted playsinline>
+        <source src="./images/website_video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Solution Section with Animate.css -->
+<section id="solution" class="py-12 px-4 bg-white sm:py-16 sm:px-8">
+  <div class="max-w-7xl mx-auto">
+    <!-- Solution Heading -->
+    <h2 id="solution-heading" class="opacity-0 transform translate-y-10 text-3xl font-bold mb-8 text-center text-[#1D3557] sm:text-4xl sm:mb-12">
+      Our Solution
+    </h2>
+
+    <!-- Boxes -->
+    <div class="grid grid-cols-1 gap-6 items-start sm:gap-8 sm:grid-cols-3">
+      
+      <!-- Box 1: Decentralized Data Storage -->
+      <div id="box-storage" class="opacity-0 transform translate-y-10 flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg sm:p-6">
+        <div id="canvas-storage" class="w-full h-40 rounded-lg mb-4 sm:h-48"></div>
+        <h3 class="text-xl font-semibold text-[#2A9D8F] mb-2 sm:text-2xl">Decentralized Data Storage</h3>
+        <p class="text-sm text-gray-600 sm:text-base">
+          We leverage Web3 technology to store your research data on a decentralized network, eliminating central points of failure and ensuring data availability at all times.
+        </p>
+      </div>
+
+      <!-- Box 2: Advanced Data Encryption -->
+      <div id="box-encryption" class="opacity-0 transform translate-y-10 flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg sm:p-6">
+        <div id="canvas-encryption" class="w-full h-40 rounded-lg mb-4 sm:h-48"></div>
+        <h3 class="text-xl font-semibold text-[#E76F51] mb-2 sm:text-2xl">Advanced Data Encryption</h3>
+        <p class="text-sm text-gray-600 sm:text-base">
+          Your data is encrypted using advanced cryptographic techniques, ensuring that only authorized users can access sensitive information.
+        </p>
+      </div>
+
+      <!-- Box 3: Full Control Over Sharing -->
+      <div id="box-sharing" class="opacity-0 transform translate-y-10 flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-lg sm:p-6">
+        <div id="canvas-sharing" class="w-full h-40 rounded-lg mb-4 sm:h-48"></div>
+        <h3 class="text-xl font-semibold text-[#457B9D] mb-2 sm:text-2xl">Full Control Over Sharing</h3>
+        <p class="text-sm text-gray-600 sm:text-base">
+          You decide who can access your research. Our platform allows you to securely share your data with specific individuals or organizations while maintaining full control.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Call to Action Buttons -->
+    <div class="mt-12 flex flex-col space-y-4 text-center sm:mt-16 sm:space-y-0 sm:flex-row sm:justify-center sm:space-x-4 animate__animated animate__fadeInUp">
+      <a href="https://na4.documents.adobe.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhBkJpLmkcW_zgTsJtSGXmeQdT76wAjj1-WHyHmqOzzeCbGtCfGZhqBTg8t7qA8ycMQ*/" 
+         class="flex-1 px-6 py-3 text-sm bg-[#2A9D8F] text-white font-semibold rounded-md hover:bg-[#457B9D] transition duration-300 sm:px-8 sm:py-4 sm:text-base flex items-center justify-center" 
+         target="_blank" rel="noopener noreferrer">
+        Assinar NDA
+      </a>
+      <a href="https://surgical-brasil.on-fleek.app/" 
+         class="flex-1 px-6 py-3 text-sm bg-[#E76F51] text-white font-semibold rounded-md hover:bg-[#C8553D] transition duration-300 sm:px-8 sm:py-4 sm:text-base flex items-center justify-center" 
+         target="_blank" rel="noopener noreferrer">
+        Acesso ao documentos protegidos
+      </a>
+      <a href="https://www.spatial.io/" 
+         class="flex-1 px-6 py-3 text-sm bg-[#1D3557] text-white font-semibold rounded-md hover:bg-[#2A9D8F] transition duration-300 sm:px-8 sm:py-4 sm:text-base flex items-center justify-center" 
+         target="_blank" rel="noopener noreferrer">
+        Acessar Metaverso
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Team Section -->
+<section id="team" class="py-12 px-4 bg-white sm:py-16 sm:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <!-- Section Heading -->
+    <h2 class="text-3xl font-bold mb-8 text-[#1D3557] sm:text-4xl">
+      Our Team
+    </h2>
+    
+    <!-- Team Members -->
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-12">
+      
+      <!-- Team Member 1 -->
+      <div class="text-center animate__animated animate__fadeInLeft">
+        <img src="images/member1.png" alt="Team Member 1" class="w-32 h-32 mx-auto rounded-full mb-4 sm:w-40 sm:h-40">
+        <h3 class="text-xl font-semibold text-[#333333] sm:text-2xl">Vinicius Felix</h3>
+        <p class="text-sm text-gray-600 mb-4 sm:text-base">Full Stack Developer</p>
+        <a href="https://www.linkedin.com/in/vinicius-felix-979034281/" target="_blank" class="inline-block text-blue-600 hover:text-blue-800 transition">
+          <i class="fab fa-linkedin text-xl sm:text-2xl"></i>
+        </a>
+      </div>
+      
+      <!-- Team Member 2 -->
+      <div class="text-center animate__animated animate__fadeInUp">
+        <img src="images/member2.png" alt="Team Member 2" class="w-32 h-32 mx-auto rounded-full mb-4 sm:w-40 sm:h-40">
+        <h3 class="text-xl font-semibold text-[#333333] sm:text-2xl">Lucas Toledo</h3>
+        <p class="text-sm text-gray-600 mb-4 sm:text-base">Game Designer</p>
+        <a href="https://www.linkedin.com/in/lucasquincoses" target="_blank" class="inline-block text-blue-600 hover:text-blue-800 transition">
+          <i class="fab fa-linkedin text-xl sm:text-2xl"></i>
+        </a>
+      </div>
+      
+      <!-- Team Member 3 -->
+      <div class="text-center animate__animated animate__fadeInRight">
+        <img src="images/member3.png" alt="Team Member 3" class="w-32 h-32 mx-auto rounded-full mb-4 sm:w-40 sm:h-40">
+        <h3 class="text-xl font-semibold text-[#333333] sm:text-2xl">Vitor Castilho</h3>
+        <p class="text-sm text-gray-600 mb-4 sm:text-base">Engineer</p>
+        <a href="https://www.linkedin.com/in/vitor-castilho-felix" target="_blank" class="inline-block text-blue-600 hover:text-blue-800 transition">
+          <i class="fab fa-linkedin text-xl sm:text-2xl"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ Section with Animation -->
+<section id="faq-section" class="relative w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center py-12 px-4 sm:py-16 sm:px-6">
+  <!-- FAQ Content -->
+  <div class="relative z-10 w-full max-w-lg bg-white shadow-lg rounded-lg p-6 sm:max-w-2xl sm:p-8">
+    <!-- FAQ Heading -->
+    <h2 class="text-3xl font-extrabold text-center w-full mb-6 sm:text-4xl sm:mb-8">
+      Frequently Asked Questions
+    </h2>
+
+    <!-- FAQ Items -->
+    <div class="space-y-4">
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-base font-semibold focus:outline-none sm:text-lg" data-target="#faq1">
+          <span>What is SurgicalBrasil?</span>
+          <svg class="w-5 h-5 text-gray-600 sm:w-6 sm:h-6 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq1" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700 text-sm sm:text-base">
+            SurgicalBrasil is a platform designed to provide secure, decentralized publishing for researchers.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-base font-semibold focus:outline-none sm:text-lg" data-target="#faq2">
+          <span>How does the platform work?</span>
+          <svg class="w-5 h-5 text-gray-600 sm:w-6 sm:h-6 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq2" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700 text-sm sm:text-base">
+            Using blockchain technology, our platform ensures data security, transparency, and accessibility for researchers.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-base font-semibold focus:outline-none sm:text-lg" data-target="#faq3">
+          <span>How secure is SurgicalBrasil?</span>
+          <svg class="w-5 h-5 text-gray-600 sm:w-6 sm:h-6 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq3" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700 text-sm sm:text-base">
+            Our platform uses advanced encryption techniques and decentralized storage to ensure the highest level of data security.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item border border-gray-300 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+        <button class="w-full flex justify-between items-center p-4 text-base font-semibold focus:outline-none sm:text-lg" data-target="#faq4">
+          <span>How can I get started?</span>
+          <svg class="w-5 h-5 text-gray-600 sm:w-6 sm:h-6 transition-transform transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq4" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+          <p class="p-4 text-gray-700 text-sm sm:text-base">
+            Click on the "Get Started" button on our homepage to create your account and begin publishing securely with SurgicalBrasil.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action: Get in Touch -->
+    <div class="mt-8 text-center">
+      <a href="https://api.whatsapp.com/send?phone=5511962179865" class="inline-block bg-[#2A9D8F] text-white py-3 px-6 rounded-md font-bold hover:bg-[#1E7A61] transition-all duration-300">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-6 bg-[#1D3557] text-white text-center sm:py-8">
+  <p class="text-sm sm:text-base">
+    &copy; 2024 SurgicalBrasil. All rights reserved.
+  </p>
+</footer>
+
+
+  <!-- JavaScript for Three.js and interactivity -->
+  <script src="main.js"></script>
+</body>
+</html>
