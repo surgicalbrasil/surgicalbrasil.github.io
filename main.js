@@ -444,7 +444,7 @@ const translations = {
       "Full Control Over Sharing": "Controle Total sobre o Compartilhamento",
       "You decide who can access your research. Our platform allows you to securely share your data with specific individuals or organizations while maintaining full control.": "Você decide quem pode acessar sua pesquisa. Nossa plataforma permite compartilhar dados de forma segura com indivíduos ou organizações mantendo o controle total.",
       // Seção Upload
-    "Follow These Steps To Upload Confidential Data": "Siga estes passos para enviar dados confidenciais",
+    "Follow These Steps To Upload Confidential Data": "Siga estes passos para enviar os dados confidenciais",
     "Begin securing your research through decentralized technology.": "Comece a proteger sua pesquisa com tecnologia descentralizada.",
     "Start Blockchain Chat": "Iniciar conversa na blockchain",
     "Begin your conversation for legal timestamp and proof.": "Inicie a conversa para gerar carimbo de data/hora e prova legal.",
@@ -488,7 +488,7 @@ const translations = {
   document.getElementById("languageSwitcher").addEventListener("change", function () {
     const selectedLang = this.value;
     if (selectedLang === "pt-br") {
-      document.querySelectorAll("h1, h2, h3, p").forEach(el => {
+      document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, span, button, a").forEach(el => {
         const originalText = el.textContent.trim();
         if (translations[selectedLang][originalText]) {
           el.textContent = translations[selectedLang][originalText];
