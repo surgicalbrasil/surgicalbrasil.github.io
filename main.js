@@ -427,6 +427,8 @@ elementsToAnimate.forEach(element => {
 
 const translations = {
     "pt-br": {
+      "Where Innovation Meets Integrity.": "Onde a Inovação Encontra a Integridade.",
+      "Accelerated by Sebrae for Startups.": "Acelerado pelo Sebrae para Startups.",
       "SurgicalBrasil": "SurgicalBrasil",
       "Empowering researchers with secure, decentralized publishing.": "Capacitando pesquisadores com publicação segura e descentralizada.",
       "What Challenges Do Researchers Face in Securing Their Work and Gaining Recognition?": "Quais desafios os pesquisadores enfrentam para proteger seu trabalho e ganhar reconhecimento?",
