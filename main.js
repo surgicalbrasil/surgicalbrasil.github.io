@@ -425,3 +425,76 @@ elementsToAnimate.forEach(element => {
   observer.observe(element);
 });
 
+const translations = {
+    "pt-br": {
+      "SurgicalBrasil": "SurgicalBrasil",
+      "Empowering researchers with secure, decentralized publishing.": "Capacitando pesquisadores com publicação segura e descentralizada.",
+      "What Challenges Do Researchers Face in Securing Their Work and Gaining Recognition?": "Quais desafios os pesquisadores enfrentam para proteger seu trabalho e ganhar reconhecimento?",
+      "Lack of Recognition": "Falta de Reconhecimento",
+      "Many early-career researchers struggle to gain recognition for their work due to limited publication options and competition from established researchers.": "Muitos pesquisadores em início de carreira lutam para obter reconhecimento devido às opções limitadas de publicação e à concorrência com pesquisadores estabelecidos.",
+      "Security Risks": "Riscos de Segurança",
+      "Centralized platforms offer little protection for sensitive data, leading to trust issues and potential IP theft.": "Plataformas centralizadas oferecem pouca proteção para dados sensíveis, levando a problemas de confiança e roubo de propriedade intelectual.",
+      "Transparency Issues": "Falta de Transparência",
+      "Existing publishing methods lack transparency, making it difficult to trace authorship and verify data integrity.": "Os métodos atuais de publicação carecem de transparência, dificultando a rastreabilidade da autoria e a verificação da integridade dos dados.",
+      "Our Solution": "Nossa Solução",
+      "Decentralized Data Storage": "Armazenamento Descentralizado de Dados",
+      "We leverage Web3 technology to store your research data on a decentralized network, eliminating central points of failure and ensuring data availability at all times.": "Utilizamos a tecnologia Web3 para armazenar seus dados de pesquisa em uma rede descentralizada, eliminando pontos centrais de falha e garantindo disponibilidade constante.",
+      "Advanced Data Encryption": "Criptografia Avançada de Dados",
+      "Your data is encrypted using advanced cryptographic techniques, ensuring that only authorized users can access sensitive information.": "Seus dados são criptografados com técnicas avançadas, garantindo que apenas usuários autorizados tenham acesso.",
+      "Full Control Over Sharing": "Controle Total sobre o Compartilhamento",
+      "You decide who can access your research. Our platform allows you to securely share your data with specific individuals or organizations while maintaining full control.": "Você decide quem pode acessar sua pesquisa. Nossa plataforma permite compartilhar dados de forma segura com indivíduos ou organizações mantendo o controle total.",
+      // Seção Upload
+    "Follow These Steps To Upload Confidential Data": "Siga estes passos para enviar dados confidenciais",
+    "Begin securing your research through decentralized technology.": "Comece a proteger sua pesquisa com tecnologia descentralizada.",
+    "Start Blockchain Chat": "Iniciar conversa na blockchain",
+    "Begin your conversation for legal timestamp and proof.": "Inicie a conversa para gerar carimbo de data/hora e prova legal.",
+    "Upload Your Files": "Envie seus arquivos",
+    "Protect your documents with decentralized encryption.": "Proteja seus documentos com criptografia descentralizada.",
+
+    // Seção Access Files
+    "Follow These Steps To Access your Files": "Siga estes passos para acessar seus arquivos",
+    "Easily complete the process in just three simple steps.": "Conclua o processo com facilidade em apenas três passos simples.",
+    "Sign the NDA": "Assine o NDA",
+    "Secure your intellectual property by signing the NDA online.": "Proteja sua propriedade intelectual assinando o NDA online.",
+    "Access Protected Documents": "Acesse Documentos Protegidos",
+    "Safeguard your research with encrypted storage and sharing.": "Proteja sua pesquisa com armazenamento e compartilhamento criptografados.",
+    "Enter the Metaverse": "Entre no Metaverso",
+    "Collaborate in a secure, immersive virtual environment.": "Colabore em um ambiente virtual seguro e imersivo.",
+
+    // Seção Team
+    "Our Team": "Nosso Time",
+    "Full Stack Developer": "Desenvolvedor Full Stack",
+    "Game Designer": "Designer de Jogos",
+    "Engineer": "Engenheiro",
+
+    // FAQ
+    "Frequently Asked Questions": "Perguntas Frequentes",
+    "What is SurgicalBrasil?": "O que é a SurgicalBrasil?",
+    "SurgicalBrasil is a platform designed to provide secure, decentralized publishing for researchers.":
+      "SurgicalBrasil é uma plataforma projetada para oferecer publicação segura e descentralizada para pesquisadores.",
+    "How does the platform work?": "Como funciona a plataforma?",
+    "Using blockchain technology, our platform ensures data security, transparency, and accessibility for researchers.":
+      "Usando tecnologia blockchain, nossa plataforma garante segurança, transparência e acessibilidade dos dados para pesquisadores.",
+    "How secure is SurgicalBrasil?": "Quão segura é a SurgicalBrasil?",
+    "Our platform uses advanced encryption techniques and decentralized storage to ensure the highest level of data security.":
+      "Nossa plataforma utiliza criptografia avançada e armazenamento descentralizado para garantir o mais alto nível de segurança.",
+    "How can I get started?": "Como posso começar?",
+    "Click on the \"Get Started\" button on our homepage to create your account and begin publishing securely with SurgicalBrasil.":
+      "Clique no botão \"Começar\" em nossa página inicial para criar sua conta e começar a publicar com segurança na SurgicalBrasil.",
+    "Contact Us": "Fale Conosco"
+    }
+  };
+
+  document.getElementById("languageSwitcher").addEventListener("change", function () {
+    const selectedLang = this.value;
+    if (selectedLang === "pt-br") {
+      document.querySelectorAll("h1, h2, h3, p").forEach(el => {
+        const originalText = el.textContent.trim();
+        if (translations[selectedLang][originalText]) {
+          el.textContent = translations[selectedLang][originalText];
+        }
+      });
+    } else {
+      location.reload(); // Reload to revert to default English content
+    }
+  });
