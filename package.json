@@ -1,0 +1,26 @@
+{
+  "name": "pitchperfect-ai-website",
+  "version": "1.0.0",
+  "description": "PitchPerfect AI - Landing page for AI-powered pitch deck analysis",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 5000",
+    "start": "npx serve -l 5000",
+    "dev:8080": "npx serve -l 8080",
+    "dev:9000": "npx serve -l 9000",
+    "preview": "npx serve -l 4173"
+  },
+  "keywords": [
+    "pitch-deck",
+    "ai",
+    "startup",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
