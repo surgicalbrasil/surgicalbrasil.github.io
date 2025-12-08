@@ -2,6 +2,43 @@
 // BRUTALIST ANIMATIONS - INTENTIONAL & BOLD
 // ============================================
 
+// Mobile Menu Toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navCta = document.querySelector('.nav-cta');
+const body = document.body;
+
+function toggleMobileMenu() {
+    mobileMenuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    navCta.classList.toggle('active');
+    body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+}
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+
+    // Close menu when clicking on a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                toggleMobileMenu();
+            }
+        });
+    });
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks && navLinks.classList.contains('active')) {
+        if (!navLinks.contains(e.target) &&
+            !navCta.contains(e.target) &&
+            !mobileMenuToggle.contains(e.target)) {
+            toggleMobileMenu();
+        }
+    }
+});
+
 // Smooth Scrolling with Offset Snap
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
